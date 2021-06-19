@@ -9,6 +9,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:TextBox ID="tb_Msg" runat="server"></asp:TextBox>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="格式錯誤" ControlToValidate ="tb_Msg" ValidationExpression="(\d*\.\d{1,6}|[+-]\d+\.\d{1,6})" ></asp:RegularExpressionValidator>
         <div>
         </div>
     </form>
